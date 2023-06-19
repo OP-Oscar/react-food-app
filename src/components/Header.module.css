@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 1em;
+    font-weight: bolder;
+    padding: 20px;
+    height: 40px;
+    background-color: #da7533;
+}
+
+.header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 180px;
+
+}
+
+.header nav button{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 1em;
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.header nav button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    }

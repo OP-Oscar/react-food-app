@@ -1,7 +1,23 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import AdBanner from './AdBanner'
+import axios from 'axios';
 
-const HomeScreen = () => {  
+
+const HomeScreen = () => {
+  const[recipe, setRecipe] = useState('');
+
+  const getRecipes = () => {
+    const recipeUrl = 'https://recipes.devmountain.com'
+    axios.get(recipeUrl).then( res => {
+      setRecipe(res.data)
+      console.log(res.data)
+    })
+  }
+  
+  useEffect( () => {
+    getRecipes()
+  }, []);
+  
   return (
     <div>
       <AdBanner />

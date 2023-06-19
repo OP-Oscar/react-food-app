@@ -1,0 +1,24 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3e3e3e;
+    color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 150px;
+}
+
+.icons{
+    border-radius: 50%;
+    background-color: #24aae1;
+    padding: 5px;
+    /* font-size: 20px; */
+  }
+
+.icondiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 6px;
+}
