@@ -1,0 +1,41 @@
+.mainarea{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.recipe_holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    width: 80%;
+ 
+  }
+
+  .searchBtn{
+    background-color: #f6ded0;
+    border-style: none;
+    font-size: medium;
+}
+
+.searchSpan{
+    background-color: #f6ded0;
+    border-radius: 8px;
+    width: 450px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/55/Magnifying_glass_icon.svg");
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+.searchBtn::placeholder{
+    color: #000000;
+}

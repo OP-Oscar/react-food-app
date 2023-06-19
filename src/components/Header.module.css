@@ -15,7 +15,6 @@
     justify-content: space-between;
     align-items: center;
     width: 180px;
-
 }
 
 .header nav button{
@@ -23,7 +22,6 @@
     background-color: transparent;
     color: white;
     font-size: 1em;
-    font-weight: bolder;
     text-align: center;
     cursor: pointer;
     -webkit-transition-duration: 0.4s; /* Safari */
