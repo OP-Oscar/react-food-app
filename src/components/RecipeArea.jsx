@@ -5,19 +5,20 @@ import RecipeCard from "./RecipeCard";
 const RecipeArea = ({ recipes }) => {
   const [search, setSearch] = useState("");
 
+  function dataRequirements(recipe){
+    let title = recipe.recipe_name.toLowerCase()
+    let searchParams = search.toLowerCase();  
+    if(
+    recipe.recipe_name !== "Not Found" && recipe.recipe_name !== "name" && recipe.type !== "" && recipe.image_url !== "" && recipe.recipe_name !== "CssPain" && recipe.image_url.includes("http") && recipe.image_url.length > 0 && recipe.type !== ""){
+  return title.includes(searchParams)
+  }}
+
   const recipeDisplay = recipes
     .filter((recipe, index) => {
-
-    if(recipe.recipe_name !== "Not Found" && recipe.type !== "" && recipe.image_url !== "" && recipe.recipe_name !== "CssPain" && recipe.image_url.includes("http") && recipe.image_url.length > 0){
-      let title = recipe.recipe_name.toLowerCase()
-
-      let searchParams = search.toLowerCase();
-
-      return title.includes(searchParams);
-    }    
+      return dataRequirements(recipe)
     })
     .map((recipe, index) => {
-      return <RecipeCard recipe={recipe} />;
+      return <RecipeCard recipe={recipe} key={recipe.recipe_id}/>;
     });
 
   return (

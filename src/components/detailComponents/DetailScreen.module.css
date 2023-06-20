@@ -1,0 +1,39 @@
+.main_pic{
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 450px;
+
+}
+
+.general_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    min-height: 400px;
+    padding: 40px;
+}
+
+.recipe_info{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    column-gap: 10px;
+    width: 400px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.7);
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 3px;
+}
+
+
+.general_info h1{
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
